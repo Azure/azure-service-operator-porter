@@ -1,14 +1,34 @@
-# Project
+# Porter Bundle for Azure Service Operator
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+[![Bundle Build](https://github.com/Azure/azure-service-operator-porter/actions/workflows/main.yaml/badge.svg)](https://github.com/Azure/azure-service-operator-porter/actions/workflows/main.yaml)
 
-As the maintainer of this project, please make a few updates:
+Goal of this project is to creates a Cloud Native Application Bundle (CNAB) using Porter which helps in deploying [Azure Service Operator](https://github.com/Azure/azure-service-operator).
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+
+## Prerequisite
+
+User need to pre-install Porter. User will need the Porter binary on system PATH. If you do not have this, please download it from [Install Porter Page](https://porter.sh/install/).
+
+ - 👉 To know more about Porter, please visit [Porter](https://porter.sh/).
+
+## How to use it? 
+
+Once current cluster context is set to the cluster where user want to deploy Azure Service Operator. It takes simple 2 steps to deploy ASO with Porter.
+
+1. Generate Credentials
+
+Please follow [porter credential generate](https://porter.sh/cli/porter_credentials_generate/) to generate a named set of credentials for Porter. 
+
+Helpful command which we used to generate credentials `porter credentials generate <cred-name> -–reference aksmcrimagescommon.azurecr.io/public/aks/porter/azure-service-operator:v0.0.1`
+
+
+2. Deploy Azure Service Opertation (ASO) using bundle
+
+Run command `porter install -c <cred-name> –-reference aksmcrimagescommon.azurecr.io/public/aks/porter/azure-service-operator:v0.0.1`
+
+🧙‍♀️ Quick demo
+
+![demo gif](resources/demo.gif)
 
 ## Contributing
 
@@ -23,11 +43,3 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
