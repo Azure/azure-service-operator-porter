@@ -2,18 +2,18 @@
 
 [![Bundle Build](https://github.com/Azure/azure-service-operator-porter/actions/workflows/main.yaml/badge.svg)](https://github.com/Azure/azure-service-operator-porter/actions/workflows/main.yaml)
 
-Goal of this project is to creates a Cloud Native Application Bundle (CNAB) using Porter which helps in deploying [Azure Service Operator](https://github.com/Azure/azure-service-operator).
+Goal of this project is to create a Cloud Native Application Bundle (CNAB) using Porter which helps in deploying [Azure Service Operator](https://github.com/Azure/azure-service-operator).
 
 
 ## Prerequisite
 
-User need to pre-install Porter. User will need the Porter binary on system PATH. If you do not have this, please download it from [Install Porter Page](https://porter.sh/install/).
+User need to pre-install Porter. User will need the Porter binary on system PATH. Please download it from [Install Porter Page](https://porter.sh/install/).
 
  - 👉 To know more about Porter, please visit [Porter](https://porter.sh/).
 
 ## How to use it? 
 
-Once current cluster context is set to the cluster where user want to deploy Azure Service Operator. It takes simple 2 steps to deploy ASO with Porter.
+Once current cluster context is set to the cluster in which user want to deploy Azure Service Operator. It takes simple 2 steps to deploy ASO with Porter.
 
 1. Generate Credentials
 
