@@ -1,7 +1,7 @@
 # This is the configuration for Porter
 # See https://porter.sh/author-bundles for documentation on how to configure your bundle.
 name: azure-service-operator
-version: 0.0.1
+version: 0.0.2
 description: "A Porter bundle that install ASO (Azure service Operator)."
 registry: aksmcrimagescommon.azurecr.io/public/aks/porter/
 
