@@ -3,7 +3,7 @@
 name: azure-service-operator
 version: 0.0.1
 description: "A Porter bundle that install ASO (Azure service Operator)."
-registry: aksmcrimagescommon.azurecr.io/public/aks/porter/
+registry: aksrepos.azurecr.io/public/aks/porter/
 
 # If you want to customize the Dockerfile in use, uncomment the line below and update the referenced file. 
 # See https://porter.sh/custom-dockerfile/

@@ -19,12 +19,12 @@ Once current cluster context is set to the cluster in which user want to deploy 
 
 Please follow [porter credential generate](https://porter.sh/cli/porter_credentials_generate/) to generate a named set of credentials for Porter. 
 
-Helpful command which we used to generate credentials `porter credentials generate <cred-name> -–reference aksmcrimagescommon.azurecr.io/public/aks/porter/azure-service-operator:v0.0.1`
+Helpful command which we used to generate credentials `porter credentials generate <cred-name> -–reference aksrepos.azurecr.io/public/aks/porter/azure-service-operator:v0.0.1`
 
 
 2. Deploy Azure Service Opertation (ASO) using bundle
 
-Run command `porter install -c <cred-name> –-reference aksmcrimagescommon.azurecr.io/public/aks/porter/azure-service-operator:v0.0.1`
+Run command `porter install -c <cred-name> –-reference aksrepos.azurecr.io/public/aks/porter/azure-service-operator:v0.0.1`
 
 🧙‍♀️ Quick demo
 
