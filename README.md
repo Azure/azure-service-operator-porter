@@ -21,7 +21,7 @@ Please follow [porter credential generate](https://porter.sh/cli/porter_credenti
 
 Helpful command which we used to generate credentials `porter credentials generate <cred-name> -–reference mcr.microsoft.com/aks/porter/azure-service-operator:v0.0.2`
 
-2. Deploy Azure Service Opertation (ASO) using bundle
+2. Deploy Azure Service Operator (ASO) using bundle
 
 Run command `porter install -c <cred-name> –-reference mcr.microsoft.com/aks/porter/azure-service-operator:v0.0.2`
 
